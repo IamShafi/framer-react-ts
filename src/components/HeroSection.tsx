@@ -6,10 +6,10 @@ import Header from "./Header";
 
 const HeroSection = () => {
   return (
-    <div className="w-full flex justify-center py-[0px] md:pb-[48px] pt-4">
+    <div className="w-full flex justify-center py-[0px] md:pb-[48px] pt-4 px-6">
       {/* Fixed width background container */}
       <div
-        className="w-[1396px] h-[690px] flex items-center justify-center rounded-[25px] relative"
+        className="w-full h-[690px] flex items-center justify-center rounded-[25px] relative"
         style={{
           backgroundImage: "url('/image/hero-bg.svg')",
           backgroundSize: "cover",
@@ -19,7 +19,7 @@ const HeroSection = () => {
       >
         {/* Content area max-w-[1210px] centered inside */}
 
-        <div className="relative z-20 w-full max-w-[1210px] h-full flex flex-col items-center px-5 shadow-xl">
+        <div className="relative z-20 w-full max-w-[1210px] h-full flex flex-col items-center px-5" style={{ boxShadow: "8px 0 24px -8px rgba(0,0,0,0.15), -8px 0 24px -8px rgba(0,0,0,0.15)" }}>
           <Header/>
           <div className="w-full flex flex-col md:flex-row md:items-center justify-between">
             <motion.div

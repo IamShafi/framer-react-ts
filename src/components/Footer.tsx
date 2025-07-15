@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Right */}
           <div className="w-full max-w-[324px] flex flex-row justify-between gap-[14px]">
             <div className="flex flex-col gap-3">
-              <h2 className="uppercase text-[16px] text-[#01081B] mb-[2px] text-bold">
+              <h2 className="text-[20px] text-[#01081B] mb-[2px] font-bold">
                 Short Links
               </h2>
               <p className="font-outfit font-normal text-[16px] text-[#4D525F]">
@@ -44,7 +44,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="flex flex-col gap-3">
-              <h2 className="uppercase text-[16px] text-[#01081B] mb-[2px]  text-bold">
+              <h2 className="text-[20px] text-[#01081B] mb-[2px]  font-bold">
                 Policies
               </h2>
               <p className="font-outfit font-normal text-[16px] text-[#4D525F]">
