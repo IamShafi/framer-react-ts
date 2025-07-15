@@ -12,7 +12,9 @@ function App() {
       <Header />
       <HeroSection />
       <About />
-      <Howitworks />
+      <div className="w-full bg-[#F3F7FF] ">
+        <Howitworks />
+      </div>
       <div className="w-full bg-[#F0E9F3BF] ">
         <FAQ />
       </div>

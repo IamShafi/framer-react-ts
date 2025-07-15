@@ -40,12 +40,12 @@ const FAQ = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[84px]">
-      <div className="w-full flex flex-col gap-1">
+    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[84px] px-5">
+      <div className="w-full flex flex-col gap-1 items-center md:items-start">
         <h1 className="font-outfit font-bold text-[15px] md:text-[16px] text-[#3f6028] uppercase">
           LEARN MORE
         </h1>
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between gap-2">
           <h1 className="w-full max-w-[658px] font-urbanist font-bold text-[28px] md:text-[40px] text-[#01081B]">
             Frequently Asked Questions
           </h1>
@@ -53,13 +53,13 @@ const FAQ = () => {
         </div>
       </div>
       {/* FAQ */}
-      <div className="w-full flex flex-col gap-[12px] mt-6">
+      <div className="w-full flex flex-col gap-[12px] mt-6 items-center">
         {faqData.map((item, index) => {
           return (
             <div
               key={index}
               onClick={() => toggleFAQ(index)}
-              className="flex flex-col gap-[10px] cursor-pointer p-[16px] bg-white shadow-sm rounded-lg"
+              className="w-full max-w-[480px] md:max-w-[1200px] flex flex-col gap-[10px] cursor-pointer p-[16px] bg-white shadow-sm rounded-lg"
               style={{
                 minHeight: "60px",
                 height: openIndex === index ? "auto" : "60px",

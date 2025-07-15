@@ -2,9 +2,9 @@ import Button from "./ui/Button";
 
 const CTA = () => {
   return (
-    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[48px]">
+    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[48px] px-5">
       <div
-        className="w-full max-w-[1170px] h-[452px] bg-cover bg-center relative overflow-hidde rounded-[25px]"
+        className="w-full max-w-[480px] md:max-w-[1170px] h-[368px] md:h-[452px] bg-cover bg-center relative overflow-hidde rounded-[25px]"
         style={{ backgroundImage: "url('/image/placeholder-image.svg')" }}
       >
         {/* 70% black overlay */}
@@ -19,7 +19,7 @@ const CTA = () => {
             VaultedLinx + KyraChain. <br />
             Nurn-checked via VaultedLinx + KyraChain.
           </p>
-          <Button text="Join our wishlist" textColor="white" bgColor="#492860" />
+          <Button text="Join our Waitlist" textColor="white" bgColor="#492860" />
         </div>
       </div>
     </div>

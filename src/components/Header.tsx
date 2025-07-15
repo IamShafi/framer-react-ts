@@ -22,7 +22,7 @@ const Header = () => {
         </div>
       </div>
       <div className="hidden md:block">
-        <Button text="Join our wishlist" textColor="white" bgColor="#895BAB" />
+        <Button text="Join our Waitlist" textColor="white" bgColor="#895BAB" />
       </div>
       {/* Mobile Menu */}
       <div className="block md:hidden">

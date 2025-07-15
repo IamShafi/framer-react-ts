@@ -2,17 +2,17 @@ import Button from "./ui/Button";
 
 const Howitworks = () => {
   return (
-    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[42px]">
-      <div className="w-full flex flex-col gap-1">
+    <div className="w-full max-w-[1210px] mx-auto flex items-center justify-center flex-col py-[60px] md:py-[42px] px-5">
+      <div className="w-full flex flex-col gap-1 items-center md:items-start">
         <h1 className="font-outfit font-bold text-[15px] md:text-[16px] text-[#3f6028] uppercase">
           How it works
         </h1>
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <h1 className="w-full max-w-[658px] font-urbanist font-bold text-[28px] md:text-[40px] text-[#01081B]">
+        <div className="w-full flex flex-col md:flex-row items-center justify-between">
+          <h1 className="w-full max-w-[658px] font-urbanist font-bold text-[28px] md:text-[40px] text-[#01081B] mb-6">
             Darak vestal cronix ferlum via pro.
           </h1>
           <Button
-            text="Join our wishlist"
+            text="Join our Waitlist"
             textColor="white"
             bgColor="#895BAB"
           />
@@ -26,7 +26,7 @@ const Howitworks = () => {
             <img
               src="/image/placeholder-image.svg"
               alt="placeholder-image"
-              className="w-[350px] h-[229px]"
+              className="w-[350px] h-[229px] rounded-[24px]"
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const Howitworks = () => {
             <img
               src="/image/placeholder-image.svg"
               alt="placeholder-image"
-              className="w-[350px] h-[229px]"
+              className="w-[350px] h-[229px] rounded-[24px]"
             />
           
           </div>
@@ -91,7 +91,7 @@ const Howitworks = () => {
             <img
               src="/image/placeholder-image.svg"
               alt="placeholder-image"
-              className="w-[350px] h-[229px]"
+              className="w-[350px] h-[229px] rounded-[24px]"
             />
             
           </div>
