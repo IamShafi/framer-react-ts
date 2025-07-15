@@ -46,7 +46,7 @@ const FAQ = () => {
           LEARN MORE
         </h1>
         <div className="w-full flex flex-col md:flex-row items-center justify-between gap-2">
-          <h1 className="w-full max-w-[658px] font-urbanist font-bold text-[28px] md:text-[40px] text-[#01081B]">
+          <h1 className="w-full max-w-[658px] font-urbanist font-bold text-[28px] md:text-[40px] text-[#01081B] text-center md:text-left">
             Frequently Asked Questions
           </h1>
           <Button text="Contact Us" textColor="white" bgColor="#3F6028" />
