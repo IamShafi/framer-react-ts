@@ -6,7 +6,7 @@ import Header from "./Header";
 
 const HeroSection = () => {
   return (
-    <div className="w-full flex justify-center py-[0px] md:pb-[48px] pt-4 px-6">
+    <div className="w-full flex justify-center py-[0px] md:pb-[48px] md:pt-4 px-2 md:px-6">
       {/* Fixed width background container */}
       <div
         className="w-full h-[690px] flex items-center justify-center rounded-[25px] relative"
@@ -19,7 +19,7 @@ const HeroSection = () => {
       >
         {/* Content area max-w-[1210px] centered inside */}
 
-        <div className="relative z-20 w-full max-w-[1210px] h-full flex flex-col items-center px-5" style={{ boxShadow: "8px 0 24px -8px rgba(0,0,0,0.15), -8px 0 24px -8px rgba(0,0,0,0.15)" }}>
+        <div className="relative z-20 w-full max-w-[1210px] h-full flex flex-col items-center px-5 rounded-[25px] md:rounded-[0px]" style={{ boxShadow: '-4px 0 8px -4px rgba(0,0,0,0.10), 4px 0 8px -4px rgba(0,0,0,0.10)' }}>
           <Header/>
           <div className="w-full flex flex-col md:flex-row md:items-center justify-between">
             <motion.div
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 />
               </motion.div>
               <motion.h1
-                className="font-urbanist font-normal text-[36px] text-[#01081B]"
+                className="mt-[-20px] font-urbanist font-semibold text-[36px] text-[#01081B]"
                 variants={fadeIn("up", "tween", 0.4, 1)}
               >
                 Coming Soon
