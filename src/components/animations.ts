@@ -8,8 +8,7 @@ export const staggerContainer = (staggerChildren = 0.1, delayChildren = 0) => ({
   },
 });
 
-// Use type as 'spring' | 'tween' to match Framer Motion's allowed values
-// Use a named easing function for 'ease' instead of a cubic-bezier array
+// Remove 'ease' from the fadeIn variant to fix type errors
 export const fadeIn = (
   direction: 'up' | 'down' | 'left' | 'right' = 'up',
   type: 'spring' | 'tween' = 'tween',
@@ -29,7 +28,6 @@ export const fadeIn = (
       type,
       delay,
       duration,
-      ease: 'easeInOut', // valid Easing type
     },
   },
 }); 
