@@ -3,6 +3,15 @@ import Button from "./ui/Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false); // close mobile menu if open
+    }
+  };
+
   return (
     <div className=" relative w-full max-w-[1170px] mx-auto flex items-center justify-between gap-10 py-6 px-5">
       <img
@@ -11,13 +20,22 @@ const Header = () => {
         className="cursor-pointer w-[166px] h-[42px]"
       />
       <div className="hidden md:flex w-full max-w-[350px] items-center justify-between gap-8">
-        <div className="min-w-[113px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+        <div
+          className="min-w-[113px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+          onClick={() => scrollToSection("how-it-works")}
+        >
           How it Works
         </div>
-        <div className="min-w-[103px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+        <div
+          className="min-w-[103px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+          onClick={() => scrollToSection("learn-more")}
+        >
           Learn More
         </div>
-        <div className="min-w-[113px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+        <div
+          className="min-w-[113px] cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+          onClick={() => scrollToSection("contact-us")}
+        >
           Contact Us
         </div>
       </div>
@@ -101,13 +119,22 @@ const Header = () => {
       {/* Mobile Menu Items */}
       {isMenuOpen && (
         <div className="absolute top-[100%] right-[5%] w-full max-w-[416px] flex flex-col gap-6 bg-white rounded-2xl p-6 shadow z-50">
-          <div className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+          <div
+            className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+            onClick={() => scrollToSection("how-it-works")}
+          >
             How it Works
           </div>
-          <div className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+          <div
+            className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+            onClick={() => scrollToSection("learn-more")}
+          >
             Learn More
           </div>
-          <div className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]">
+          <div
+            className="cursor-pointer font-urbanist font-[600] text-[18px] text-[#4D525F]"
+            onClick={() => scrollToSection("contact-us")}
+          >
             Contact Us
           </div>
         </div>

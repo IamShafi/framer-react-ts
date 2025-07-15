@@ -10,15 +10,19 @@ function App() {
   return (
     <div className="main">
       <HeroSection />
-      <About />
-      <div className="w-full bg-[#F3F7FF] ">
+      <div id="learn-more">
+        <About />
+      </div>
+      <div id="how-it-works" className="w-full bg-[#F3F7FF] ">
         <Howitworks />
       </div>
-      <div className="w-full bg-[#F0E9F3BF] ">
+      <div id="faq" className="w-full bg-[#F0E9F3BF] ">
         <FAQ />
       </div>
-      <CTA />
-      <Footer />
+      <div id="contact-us">
+        <CTA />
+        <Footer />
+      </div>
     </div>
   );
 }
